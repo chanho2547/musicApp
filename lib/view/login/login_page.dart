@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:spotify/constants/colors.dart';
 import 'package:spotify/view/tab/tap.dart';
@@ -29,20 +28,31 @@ class _LoginPageState extends State<LoginPage> {
                 height: height / 2,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: ColorConstants.primaryColor,
-                  borderRadius: const BorderRadius.only(
-                    bottomRight: Radius.circular(60),
-                    bottomLeft: Radius.circular(60),
-                  )
-                ),
+                    color: ColorConstants.primaryColor,
+                    borderRadius: const BorderRadius.only(
+                      bottomRight: Radius.circular(60),
+                      bottomLeft: Radius.circular(60),
+                    )),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
-                      height: 70,
-                      child: Image.asset('assets/images/logo.png')),
-                    const SizedBox(height: 20,),
-                    const Text('MIllions of songs, free on spotify', style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.w600, fontFamily: 'Roboto', fontStyle: FontStyle.normal),)
+                        height: 140,
+                        child: Image.asset(
+                          'assets/images/logo.png',
+                        )),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    const Text(
+                      'Sound Of All Places',
+                      style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontFamily: 'Roboto',
+                          fontStyle: FontStyle.normal),
+                    )
                   ],
                 ),
               ),
@@ -54,26 +64,37 @@ class _LoginPageState extends State<LoginPage> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 20),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 32, vertical: 20),
                         height: height / 1.9,
                         margin: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(32)
-                        ),
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(32)),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
-                            const Text('Login Account', style: TextStyle(fontSize: 23, fontWeight: FontWeight.w500), textAlign: TextAlign.center,),
-                            const SizedBox(height: 22,),
-                            SizedBox(
-                              height: 40,
-                              child: Input(hint: 'Email or Username', icon: Icons.email_outlined),
+                            const Text(
+                              'Login Account',
+                              style: TextStyle(
+                                  fontSize: 23, fontWeight: FontWeight.w500),
+                              textAlign: TextAlign.center,
                             ),
-                            const SizedBox( height:16),
+                            const SizedBox(
+                              height: 22,
+                            ),
                             SizedBox(
                               height: 40,
-                              child: Input(hint: 'Password', icon: Icons.visibility_outlined),
+                              child: Input(
+                                  hint: 'Email or Username',
+                                  icon: Icons.email_outlined),
+                            ),
+                            const SizedBox(height: 16),
+                            SizedBox(
+                              height: 40,
+                              child: Input(
+                                  hint: 'Password',
+                                  icon: Icons.visibility_outlined),
                             ),
                             SwitchListTile.adaptive(
                               activeColor: ColorConstants.primaryColor,
@@ -84,16 +105,32 @@ class _LoginPageState extends State<LoginPage> {
                                 });
                               }),
                               contentPadding: const EdgeInsets.all(0),
-                              title: Text('Remember me', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: ColorConstants.starterWhite)),
+                              title: Text('Remember me',
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w400,
+                                      color: ColorConstants.starterWhite)),
                             ),
                             MaterialButton(
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(31)),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(31)),
                               height: 40,
                               color: ColorConstants.primaryColor,
-                              onPressed: () => Navigator.push(context , MaterialPageRoute(builder: (context) => const Tabs())),
-                              child: const Text('LOG IN', style: TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.w700),) ,
+                              onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Tabs())),
+                              child: const Text(
+                                'LOG IN',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w700),
+                              ),
                             ),
-                            const SizedBox(height: 10,),
+                            const SizedBox(
+                              height: 10,
+                            ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -104,9 +141,17 @@ class _LoginPageState extends State<LoginPage> {
                                     color: ColorConstants.starterWhite,
                                   ),
                                 ),
-                                const SizedBox(width: 12,),
-                                Text('or', style: TextStyle(color: ColorConstants.starterWhite, fontSize: 13, fontWeight: FontWeight.w700)),
-                                const SizedBox(width: 12,),
+                                const SizedBox(
+                                  width: 12,
+                                ),
+                                Text('or',
+                                    style: TextStyle(
+                                        color: ColorConstants.starterWhite,
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.w700)),
+                                const SizedBox(
+                                  width: 12,
+                                ),
                                 Expanded(
                                   child: Divider(
                                     thickness: 1,
@@ -116,36 +161,66 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                               ],
                             ),
-                            const SizedBox(height: 16,),
+                            const SizedBox(
+                              height: 16,
+                            ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 SizedBox(
-                                  height: 40,
-                                  child: Image.asset('assets/images/google+.png')),
-                                const SizedBox(width: 16,),
+                                    height: 40,
+                                    child: Image.asset(
+                                        'assets/images/google+.png')),
+                                const SizedBox(
+                                  width: 16,
+                                ),
                                 SizedBox(
-                                  height: 40,
-                                  child: Image.asset('assets/images/facebook.png')),
+                                    height: 40,
+                                    child: Image.asset(
+                                        'assets/images/facebook.png')),
                               ],
                             ),
-                            const SizedBox(height: 16,),
-                            Text('Forget password?',
-                              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: ColorConstants.starterWhite),
-                              textAlign: TextAlign.center,),
+                            const SizedBox(
+                              height: 16,
+                            ),
+                            Text(
+                              'Forget password?',
+                              style: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w400,
+                                  color: ColorConstants.starterWhite),
+                              textAlign: TextAlign.center,
+                            ),
                           ],
                         ),
                       ),
-                      const SizedBox(height: 16,),
+                      const SizedBox(
+                        height: 16,
+                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Text('Don’t have an account?', style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.w500),),
-                          const SizedBox(width: 20,),
-                          Text('Sign up now', style: TextStyle(color: ColorConstants.primaryColor, fontWeight: FontWeight.w700),)
+                          const Text(
+                            'Don’t have an account?',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w500),
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Text(
+                            'Sign up now',
+                            style: TextStyle(
+                                color: ColorConstants.primaryColor,
+                                fontWeight: FontWeight.w700),
+                          )
                         ],
                       ),
-                      const SizedBox(height: 44,)
+                      const SizedBox(
+                        height: 44,
+                      )
                     ],
                   ),
                 ),
@@ -161,7 +236,9 @@ class _LoginPageState extends State<LoginPage> {
 // ignore: must_be_immutable
 class Input extends StatelessWidget {
   Input({
-    Key? key, required this.hint, required this.icon,
+    Key? key,
+    required this.hint,
+    required this.icon,
   }) : super(key: key);
 
   String hint;
@@ -171,21 +248,19 @@ class Input extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        labelText: hint,
-        labelStyle: const TextStyle(
-          fontSize: 12,
-          fontWeight: FontWeight.w400,
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(26),
-          borderSide: BorderSide(color: ColorConstants.starterWhite)
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: ColorConstants.primaryColor ),
-          borderRadius: const BorderRadius.all(Radius.circular(26)),
-        ),
-        suffixIcon: Icon(icon)
-      ),
+          labelText: hint,
+          labelStyle: const TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.w400,
+          ),
+          enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(26),
+              borderSide: BorderSide(color: ColorConstants.starterWhite)),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: ColorConstants.primaryColor),
+            borderRadius: const BorderRadius.all(Radius.circular(26)),
+          ),
+          suffixIcon: Icon(icon)),
     );
   }
 }

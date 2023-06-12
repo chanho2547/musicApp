@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "52516705286",
+    "project_id": "soap-2b2ba",
+    "storage_bucket": "soap-2b2ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52516705286:android:78896d79b0b926c0131f87",
+        "android_client_info": {
+          "package_name": "com.example.spotify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgtn3WXM9EFDt0KgxBN5brMXtPuOwJto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52516705286:android:92a3826fe99d2072131f87",
+        "android_client_info": {
+          "package_name": "com.minlee.storify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKgtn3WXM9EFDt0KgxBN5brMXtPuOwJto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
